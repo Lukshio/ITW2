@@ -187,7 +187,7 @@ li a {
     top: 17px;
     right: 20px;
     z-index: 2000;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -313,6 +313,9 @@ footer li {
 }
 
 @media only screen and (max-width: 600px) {
+    #hamburger {
+        display: flex;
+    }
     #nav_logo {
         padding: 15px 0;
     }
