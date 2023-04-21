@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<header>
+    <nav id="header_nav" class="d-flex nav-container">
+        <a href="#home"><div id="nav_logo">Fiktivní programátor</div></a>
+        <ul id="menu">
+            <li><a href="#home">Domů</a></li>
+            <li><a href="#co-umim">Co umím</a></li>
+            <li><a href="#about">O mně</a></li>
+            <li><a href="#technologies">Technologie</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+        <div id="hamburger" onclick="openMenu()">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+        </div>
+    </nav>
+</header>
+<main>
+    <section id="home">
+        <div id="js-text" class="js-text text-center">
+            <h1>Fiktivní programátor</h1>
+        </div>
+    </section>
+
+    <section class="container mb">
+        <h2 class="text-center mt mb h2-heading" id="co-umim">Co umím?</h2>
+
+        <section class="row">
+            <div class="col-3">
+                <h2 class="h2-heading" >Webové stránky</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Suspendisse sagittis ultrices augue. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Etiam commodo dui eget wisi. Nullam dapibus fermentum ipsum.</p>
+                <a href="#contact" class="btn text-right">Chci webovou stránku</a>
+            </div>
+            <div class="col-2">
+                <img src="images/website-itw.png" loading="lazy" alt="website image">
+            </div>
+        </section>
+
+        <section class="row">
+            <div class="col-2">
+                <img src="images/rpi-itw.jpeg" loading="lazy" alt="rpi image">
+            </div>
+            <div class="col-3">
+                <h2 class="h2-heading" >RaspberrPi</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Suspendisse sagittis ultrices augue. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Etiam commodo dui eget wisi. Nullam dapibus fermentum ipsum. </p>
+                <a href="#contact" class="btn text-right">Chci raspberry</a>
+            </div>
+        </section>
+
+        <section class="row">
+            <div class="col-3">
+                <h2 class="h2-heading" >Servery</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Suspendisse sagittis ultrices augue. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Etiam commodo dui eget wisi. Nullam dapibus fermentum ipsum. </p>
+                <a href="#contact" class="btn text-right">Chci server</a>
+            </div>
+            <div class="col-2">
+                <img src="images/server-itw.png" loading="lazy" alt="server image">
+            </div>
+        </section>
+    </section>
+    <div class="jumbotron mt" id="about">
+        <section class="container">
+            <h2 class="h2-heading text-center">O mně</h2>
+            <div class="row">
+                <div class="col-1">
+                    <img src="images/programmer-itw.jpg" alt="programmer image" loading="lazy" id="programmer-img">
+                </div>
+                <div class="col-4">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Suspendisse sagittis ultrices augue. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Etiam commodo dui eget wisi. Nullam dapibus fermentum ipsum. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Nullam dapibus fermentum ipsum. Duis condimentum augue id magna semper rutrum. Phasellus rhoncus.</p>
+                    <p>Curabitur bibendum justo non orci. Pellentesque arcu. Vivamus porttitor turpis ac leo. Proin mattis lacinia justo. Vivamus ac leo pretium faucibus. In enim a arcu imperdiet malesuada. Integer pellentesque quam vel velit. Aliquam id dolor. Proin in tellus sit amet nibh dignissim sagittis. Maecenas libero. Phasellus rhoncus. Curabitur vitae diam non enim vestibulum interdum. Proin pede metus, vulputate nec, fermentum fringilla, vehicula vitae, justo. Praesent id justo in neque elementum ultrices. Aliquam in lorem sit amet leo accumsan lacinia. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Pellentesque sapien. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Nullam eget nisl.</p>
+                </div>
+            </div>
+
+            <h3 id="experience">Moje zkušenosti</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Suspendisse sagittis ultrices augue. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Etiam commodo dui eget wisi. Nullam dapibus fermentum ipsum. </p>
+            <dl>
+                <dt>2005 - 2006</dt>
+                <dd>Firma krásné weby s.r.o.</dd>
+                <dt>2006 - 2008</dt>
+                <dd>Weby a.s.</dd>
+                <dt>2008 - 2012</dt>
+                <dd>CSSMasters s.r.o.</dd>
+                <dt>2012 - 2022</dt>
+                <dd>WEBGames s.r.o.</dd>
+                <dt>2020 - nyní</dt>
+                <dd>Freelancer/programátor na volné noze</dd>
+            </dl>
+        </section>
+    </div>
+
+    <section class="container mt mb">
+        <h2 class="h2-heading text-center">Jaké používám technologie?</h2>
+        <div id="technologies" class="d-flex">
+            <a href="" target="_blank">
+                <figure>
+                    <img src="icons/icons8-css3-96.png" alt="icon of css3" loading="lazy">
+                    <figcaption class="text-center">CSS3</figcaption>
+                </figure>
+            </a>
+            <a href="" target="_blank">
+                <figure>
+                    <img src="icons/icons8-html-5-96.png" alt="icon of html5" loading="lazy">
+                    <figcaption class="text-center">HTML5</figcaption>
+                </figure>
+            </a>
+            <a href="" target="_blank">
+                <figure>
+                    <img src="icons/icons8-javascript-96.png" alt="icon of js" loading="lazy">
+                    <figcaption class="text-center">JavaScript</figcaption>
+                </figure>
+            </a>
+            <a href="" target="_blank">
+                <figure>
+                    <img src="icons/icons8-vue-js-96.png" alt="icon of vue.js" loading="lazy">
+                    <figcaption class="text-center">Vue.js</figcaption>
+                </figure>
+            </a>
+            <a href="" target="_blank">
+                <figure>
+                    <img src="icons/icons8-npm-96.png" alt="icon of npm" loading="lazy">
+                    <figcaption class="text-center">NPM</figcaption>
+                </figure>
+            </a>
+            <a href="" target="_blank">
+                <figure>
+                    <img src="icons/new-php-logo.png" alt="icon of php" loading="lazy">
+                    <figcaption class="text-center">PHP 7+</figcaption>
+                </figure>
+            </a>
+        </div>
+    </section>
+
+    <div id="footer-start">
+        <section class="jumbotron">
+            <h2 class="h2-heading text-center">Kontakt</h2>
+            <div id="map" class="container">
+                <h3>Mapa</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17530.482165165082!2d16.58821366013299!3d49.221010786911634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471294099dc06bbb%3A0xbfcf161b01a48b0d!2zRmFrdWx0YSBpbmZvcm1hxI1uw61jaCB0ZWNobm9sb2dpw60gVnlzb2vDqWhvIHXEjWVuw60gdGVjaG5pY2vDqWhvIHYgQnJuxJs!5e0!3m2!1scs!2scz!4v1682114907660!5m2!1scs!2scz"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <div id="contact" class="row mt mb">
+            <div class="col-2 text-center">
+                <p>
+                    Fiktivní programátor<br>
+                    IČO: 000000000<br>
+                    DIČ: CZ000000000<br>
+                    Božetěchova 1/2, 612 00 Brno-Královo Pole
+                </p>
+                <p>
+                    <a href="mailto:email@programator.cz"> email@programator.cz</a><br>
+                    <a href="tel:+420000000000">+420 000 000 000</a>
+                </p>
+            </div>
+            <div class="col-3 text-left">
+                <form>
+                    <div class="d-flex">
+                        <div class="ml">
+                            <label for="subject" class="d-block">Předmět</label>
+                            <input type="text" id="subject">
+                            <label for="email" class="d-block">Email</label>
+                            <input type="email" id="email">
+                            <label for="name" class="d-block">Kontaktní telefon</label>
+                            <input type="tel" id="name">
+                        </div>
+                        <div class="ml">
+                            <label for="message" class="d-block">Zpráva</label>
+                            <textarea class="form-input" id="message" rows="7"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn text-center ml">Odeslat</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="jumbotron">
+        <div class="container text-center">
+            <ul>
+                <li><a href="#home">Domů</a></li>
+                <li><a href="#films">Projekty</a></li>
+                <li><a href="#biography">Technologie</a></li>
+            </ul>
+            <div>Fiktivní programátor © <span id="year"></span> by Lukáš Ježek</div>
+        </div>
+    </footer>
+</main>
+
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+
+    let i = 0, j = 0, counter = 0;
+    /*array, storing the texts, you can add more texts into it*/
+    const texts = new Array(
+        "Nejlepší programátor na trhu",
+        "100+ projektů dokončeno",
+        "RPI a servery");
+    const typingSpeed = 80;    //pause before typing next letter
+    const switchingSpeed = 2500;    //the writed text will be displayed for switchingSpeed milliseconds
+    let result = "";
+    let isDeleting = false;
+
+    let typing = setInterval(function () {
+        !isDeleting ? typeChars(texts[counter]) : deleteChars()
+    }, typingSpeed);
+
+    function typeChars(text) {
+        if (i < text.length && i >= 0) {
+            result += text.charAt(i);
+            document.getElementById("js-text").innerHTML = result;
+            i++;
+            j++;
+        } else {
+            clearInterval(typing);
+            setTimeout(function () {
+                typing = setInterval(function () {
+                    if (!isDeleting) {
+                        typeChars(texts[counter]);
+                    } else if (isDeleting) {
+                        deleteChars();
+                    }
+                }, typingSpeed);
+            }, switchingSpeed);
+            isDeleting = true;
+        }
+    }
+
+    function deleteChars() {
+        if (j > 0) {
+            result = result.substr(0, result.length - 1);
+            document.getElementById("js-text").innerHTML = result;
+            j--;
+        } else {
+            isDeleting = false;
+            i = 0;
+            j = 0;
+
+            if (counter < texts.length - 1) counter++;
+            else counter = 0;
+        }
+    }
+
+    window.onscroll = function() {stickyHeader()};
+    let header = document.getElementById("header_nav");
+    let sticky = header.offsetTop;
+    function stickyHeader() {
+        if (window.pageYOffset > sticky) header.classList.add("sticky");
+        else header.classList.remove("sticky");
+    }
+
+
+    function openMenu() {
+        document.getElementById("menu")?.classList.toggle("open");
+    }
+</script>
+</body>
+</html>
