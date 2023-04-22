@@ -1,6 +1,6 @@
 /* GLOBALS */
-img, .btn {
-    transition-duration: 500ms;
+* {
+    transition-duration: 300ms;
 }
 
 :root {
@@ -76,7 +76,7 @@ a {
 /* grid system */
 .row {
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns: 33.3% 33.3% 33.3%;
 }
 
 .col-1 {
@@ -91,15 +91,7 @@ a {
     grid-column: span 3;
 }
 
-.col-4 {
-    grid-column: span 4;
-}
-
-.col-5 {
-    grid-column: span 5;
-}
-
-.col-1, .col-2, .col-3, .col-4, .col-5 {
+.pxy {
     padding: 15px;
 }
 
@@ -121,11 +113,21 @@ a {
 }
 
 .h2-heading {
-    color: #197bbd;
-    font-size: 1.4rem;
+    color: var(--darkBlue);
+    font-size: 1.8rem;
+}
+
+.h3-heading {
+    color: var(--lightBlue);
+    font-size: 1.6rem;
+}
+
+h3 {
+    margin: 0;
 }
 
 /* OTHER */
+/* GLOBALS START */
 img {
     width: 100%;
     height: auto;
@@ -136,17 +138,12 @@ img:hover {
     transform: scale(1.04);
 }
 
-#programmer-img {
-    border-radius: 50%;
-}
-
-li {
-    display: inline;
-    margin: 0 12px;
-}
-
 a {
     color: inherit;
+}
+
+a:hover {
+    color: var(--cinereous);
 }
 
 li a {
@@ -154,11 +151,59 @@ li a {
     color: inherit;
 }
 
+.btn {
+    background-color: var(--silver);
+    border: 1px solid var(--cinereous);
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: var(--darkCinereous);
+    cursor: grab;
+    font-weight: 600;
+}
+
+.btn:hover {
+    color: white;
+    background-color: var(--cinereous);
+}
+
+/* END GLOBALS / START LOCALS */
+/* to top button */
+#to-top {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    border: 1px solid var(--lightBlue);
+    padding: 2px 15px 9px 15px;
+    color: var(--lightBlue);
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    font-size: 24px;
+    transition-duration: 500ms;
+}
+
+#to-top:hover {
+    background-color: var(--lightBlue);
+    color: white;
+}
+
+.to-top-visible {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* NAVBAR */
+#menu li, footer li {
+    display: inline;
+    margin: 0 12px;
+}
+
 #menu.open {
     display: block;
 }
 
 #header_nav {
+    text-transform: uppercase;
     color: white;
     font-weight: 500;
     font-size: 1.2rem;
@@ -214,24 +259,32 @@ li a {
     background-image: url("images/bg.jpg");
 }
 
+/* co umim section */
 #co-umim {
     font-size: 2rem;
     font-weight: bold;
     color: var(--darkBlue);
 }
 
+/* experience section */
 #experience {
     color: var(--cinereous);
 }
 
+#programmer-img {
+    border-radius: 50%;
+}
+
 dt {
     color: var(--green);
+    font-weight: bold;
 }
 
 dt::after {
     content: ':';
 }
 
+/* technologies section */
 #technologies {
     justify-content: space-between;
     align-items: baseline;
@@ -253,21 +306,51 @@ dt::after {
     width: 84px;
 }
 
-.btn {
-    background-color: var(--silver);
-    border: 1px solid var(--cinereous);
-    border-radius: 5px;
-    padding: 10px 15px;
-    color: var(--darkCinereous);
-    cursor: grab;
-    font-weight: 600;
+/* pricing section */
+.pricing-item {
+    margin: 25px;
+    background-color: white;
 }
 
-.btn:hover {
+.pricing-item > h3 {
+    background-color: var(--lightBlue);
+    padding: 15px 0;
     color: white;
-    background-color: var(--cinereous);
 }
 
+.price {
+    color: var(--darkCinereous);
+    font-weight: bold;
+    font-size: 2em;
+    padding-top: 15px;
+}
+
+.price::after {
+    content: ' Kč';
+}
+
+.pricing-item ul {
+    list-style: none;
+}
+
+.pricing-item li::before {
+    content: "✔ ";
+    color: var(--lightBlue);
+}
+
+.btn-pricing {
+    border-radius: 0;
+    border: none;
+    background-color: var(--lightBlue);
+    color: white;
+    margin: 15px auto 20px auto;
+}
+
+.btn-pricing:hover {
+    background-color: var(--darkBlue);
+}
+
+/* footer start */
 form label {
     color: var(--darkBlue);
 }
@@ -312,10 +395,12 @@ footer li {
     font-size: 1.7rem;
 }
 
+/* Mobile support */
 @media only screen and (max-width: 600px) {
     #hamburger {
         display: flex;
     }
+
     #nav_logo {
         padding: 15px 0;
     }
@@ -341,18 +426,10 @@ footer li {
     }
 
     .col-1 {
-        grid-column: span 5 !important;
+        grid-column: span 3 !important;
     }
 
     .col-2 {
-        grid-column: span 5 !important;
-    }
-
-    .col-3 {
-        grid-column: span 5 !important;
-    }
-
-    .col-4 {
-        grid-column: span 5 !important;
+        grid-column: span 3 !important;
     }
 }

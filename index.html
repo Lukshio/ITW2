@@ -2,19 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Fiktivní programátor - Lukáš Ježek xjezek19</title>
     <link rel="stylesheet" href="style.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <header>
     <nav id="header_nav" class="d-flex nav-container">
-        <a href="#home"><div id="nav_logo">Fiktivní programátor</div></a>
+        <a href="#home">
+            <div id="nav_logo">Fiktivní programátor</div>
+        </a>
         <ul id="menu">
             <li><a href="#home">Domů</a></li>
-            <li><a href="#co-umim">Co umím</a></li>
+            <li><a href="#skills">Co umím</a></li>
             <li><a href="#about">O mně</a></li>
             <li><a href="#technologies">Technologie</a></li>
+            <li><a href="#pricing">Ceník</a></li>
             <li><a href="#contact">Kontakt</a></li>
         </ul>
         <div id="hamburger" onclick="openMenu()">
@@ -32,37 +35,46 @@
     </section>
 
     <section class="container mb">
-        <h2 class="text-center mt mb h2-heading" id="co-umim">Co umím?</h2>
+        <h2 class="text-center mt mb h2-heading" id="skills">Co umím?</h2>
 
         <section class="row">
-            <div class="col-3">
-                <h2 class="h2-heading" >Webové stránky</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Suspendisse sagittis ultrices augue. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Etiam commodo dui eget wisi. Nullam dapibus fermentum ipsum.</p>
+            <div class="col-2 pxy">
+                <h3 class="h3-heading">Webové stránky</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis sapien nunc, commodo et, interdum
+                    suscipit, sollicitudin et, dolor. Suspendisse sagittis ultrices augue. Curabitur ligula sapien,
+                    pulvinar a vestibulum quis, facilisis vel sapien. Etiam commodo dui eget wisi. Nullam dapibus
+                    fermentum ipsum.</p>
                 <a href="#contact" class="btn text-right">Chci webovou stránku</a>
             </div>
-            <div class="col-2">
+            <div class="col-1">
                 <img src="images/website-itw.png" loading="lazy" alt="website image">
             </div>
         </section>
 
         <section class="row">
-            <div class="col-2">
+            <div class="col-1">
                 <img src="images/rpi-itw.jpeg" loading="lazy" alt="rpi image">
             </div>
-            <div class="col-3">
-                <h2 class="h2-heading" >RaspberrPi</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Suspendisse sagittis ultrices augue. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Etiam commodo dui eget wisi. Nullam dapibus fermentum ipsum. </p>
+            <div class="col-2 pxy">
+                <h3 class="h3-heading">RaspberrPi</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis sapien nunc, commodo et, interdum
+                    suscipit, sollicitudin et, dolor. Suspendisse sagittis ultrices augue. Curabitur ligula sapien,
+                    pulvinar a vestibulum quis, facilisis vel sapien. Etiam commodo dui eget wisi. Nullam dapibus
+                    fermentum ipsum. </p>
                 <a href="#contact" class="btn text-right">Chci raspberry</a>
             </div>
         </section>
 
         <section class="row">
-            <div class="col-3">
-                <h2 class="h2-heading" >Servery</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Suspendisse sagittis ultrices augue. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Etiam commodo dui eget wisi. Nullam dapibus fermentum ipsum. </p>
+            <div class="col-2 pxy">
+                <h3 class="h3-heading">Servery</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis sapien nunc, commodo et, interdum
+                    suscipit, sollicitudin et, dolor. Suspendisse sagittis ultrices augue. Curabitur ligula sapien,
+                    pulvinar a vestibulum quis, facilisis vel sapien. Etiam commodo dui eget wisi. Nullam dapibus
+                    fermentum ipsum. </p>
                 <a href="#contact" class="btn text-right">Chci server</a>
             </div>
-            <div class="col-2">
+            <div class="col-1">
                 <img src="images/server-itw.png" loading="lazy" alt="server image">
             </div>
         </section>
@@ -71,17 +83,35 @@
         <section class="container">
             <h2 class="h2-heading text-center">O mně</h2>
             <div class="row">
-                <div class="col-1">
+                <div class="col-1 pxy">
                     <img src="images/programmer-itw.jpg" alt="programmer image" loading="lazy" id="programmer-img">
                 </div>
-                <div class="col-4">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Suspendisse sagittis ultrices augue. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Etiam commodo dui eget wisi. Nullam dapibus fermentum ipsum. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Nullam dapibus fermentum ipsum. Duis condimentum augue id magna semper rutrum. Phasellus rhoncus.</p>
-                    <p>Curabitur bibendum justo non orci. Pellentesque arcu. Vivamus porttitor turpis ac leo. Proin mattis lacinia justo. Vivamus ac leo pretium faucibus. In enim a arcu imperdiet malesuada. Integer pellentesque quam vel velit. Aliquam id dolor. Proin in tellus sit amet nibh dignissim sagittis. Maecenas libero. Phasellus rhoncus. Curabitur vitae diam non enim vestibulum interdum. Proin pede metus, vulputate nec, fermentum fringilla, vehicula vitae, justo. Praesent id justo in neque elementum ultrices. Aliquam in lorem sit amet leo accumsan lacinia. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Pellentesque sapien. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Nullam eget nisl.</p>
+                <div class="col-2 pxy">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis sapien nunc, commodo et, interdum
+                        suscipit, sollicitudin et, dolor. Suspendisse sagittis ultrices augue. Curabitur ligula sapien,
+                        pulvinar a vestibulum quis, facilisis vel sapien. Etiam commodo dui eget wisi. Nullam dapibus
+                        fermentum ipsum. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
+                        voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Maecenas
+                        ipsum velit, consectetuer eu lobortis ut, dictum at dui. Nullam dapibus fermentum ipsum. Duis
+                        condimentum augue id magna semper rutrum. Phasellus rhoncus.</p>
+                    <p>Curabitur bibendum justo non orci. Pellentesque arcu. Vivamus porttitor turpis ac leo. Proin
+                        mattis lacinia justo. Vivamus ac leo pretium faucibus. In enim a arcu imperdiet malesuada.
+                        Integer pellentesque quam vel velit. Aliquam id dolor. Proin in tellus sit amet nibh dignissim
+                        sagittis. Maecenas libero. Phasellus rhoncus. Curabitur vitae diam non enim vestibulum interdum.
+                        Proin pede metus, vulputate nec, fermentum fringilla, vehicula vitae, justo. Praesent id justo
+                        in neque elementum ultrices. Aliquam in lorem sit amet leo accumsan lacinia. Sed vel lectus.
+                        Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Pellentesque sapien. Duis sapien
+                        nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Nam libero tempore, cum soluta
+                        nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus,
+                        omnis voluptas assumenda est, omnis dolor repellendus. Nullam eget nisl.</p>
                 </div>
             </div>
 
             <h3 id="experience">Moje zkušenosti</h3>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis sapien nunc, commodo et, interdum suscipit, sollicitudin et, dolor. Suspendisse sagittis ultrices augue. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Etiam commodo dui eget wisi. Nullam dapibus fermentum ipsum. </p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis sapien nunc, commodo et, interdum
+                suscipit, sollicitudin et, dolor. Suspendisse sagittis ultrices augue. Curabitur ligula sapien, pulvinar
+                a vestibulum quis, facilisis vel sapien. Etiam commodo dui eget wisi. Nullam dapibus fermentum
+                ipsum. </p>
             <dl>
                 <dt>2005 - 2006</dt>
                 <dd>Firma krásné weby s.r.o.</dd>
@@ -100,37 +130,37 @@
     <section class="container mt mb">
         <h2 class="h2-heading text-center">Jaké používám technologie?</h2>
         <div id="technologies" class="d-flex">
-            <a href="" target="_blank">
+            <a href="https://cs.wikipedia.org/wiki/CSS3" target="_blank">
                 <figure>
                     <img src="icons/icons8-css3-96.png" alt="icon of css3" loading="lazy">
                     <figcaption class="text-center">CSS3</figcaption>
                 </figure>
             </a>
-            <a href="" target="_blank">
+            <a href="https://cs.wikipedia.org/wiki/HTML5" target="_blank">
                 <figure>
                     <img src="icons/icons8-html-5-96.png" alt="icon of html5" loading="lazy">
                     <figcaption class="text-center">HTML5</figcaption>
                 </figure>
             </a>
-            <a href="" target="_blank">
+            <a href="https://cs.wikipedia.org/wiki/JavaScript" target="_blank">
                 <figure>
                     <img src="icons/icons8-javascript-96.png" alt="icon of js" loading="lazy">
                     <figcaption class="text-center">JavaScript</figcaption>
                 </figure>
             </a>
-            <a href="" target="_blank">
+            <a href="https://cs.wikipedia.org/wiki/Vue.js" target="_blank">
                 <figure>
                     <img src="icons/icons8-vue-js-96.png" alt="icon of vue.js" loading="lazy">
                     <figcaption class="text-center">Vue.js</figcaption>
                 </figure>
             </a>
-            <a href="" target="_blank">
+            <a href="https://cs.wikipedia.org/wiki/Npm" target="_blank">
                 <figure>
                     <img src="icons/icons8-npm-96.png" alt="icon of npm" loading="lazy">
                     <figcaption class="text-center">NPM</figcaption>
                 </figure>
             </a>
-            <a href="" target="_blank">
+            <a href="https://cs.wikipedia.org/wiki/PHP" target="_blank">
                 <figure>
                     <img src="icons/new-php-logo.png" alt="icon of php" loading="lazy">
                     <figcaption class="text-center">PHP 7+</figcaption>
@@ -139,16 +169,66 @@
         </div>
     </section>
 
-    <div id="footer-start">
-        <section class="jumbotron">
+    <div class="jumbotron">
+        <section class="container mb mt" id="pricing">
+            <h2 class="h2-heading text-center">Orientační ceník</h2>
+            <div class="row">
+
+                <div class="pricing-item col-1">
+                    <h3 class="text-center">Malý web</h3>
+                    <div class="price text-center">10 000</div>
+                    <ul>
+                        <li>Do 10 stránek</li>
+                        <li>Pro malý business</li>
+                        <li>Dokončení do měsíce</li>
+                    </ul>
+                    <div class="d-flex">
+                        <a href="#contact" class="btn btn-pricing">Poptat nyní</a>
+                    </div>
+                </div>
+
+                <div class="pricing-item col-1">
+                    <h3 class="text-center">Střední web</h3>
+                    <div class="price text-center">25 000</div>
+                    <ul>
+                        <li>Do 15 stránek</li>
+                        <li>Pro střední business</li>
+                        <li>Dokončení do 14 dnů</li>
+                    </ul>
+                    <div class="d-flex">
+                        <a href="#contact" class="btn btn-pricing">Poptat nyní</a>
+                    </div>
+                </div>
+
+                <div class="pricing-item col-1">
+                    <h3 class="text-center">Velký web</h3>
+                    <div class="price text-center">50 000</div>
+                    <ul>
+                        <li>Do X stránek</li>
+                        <li>Pro velký business</li>
+                        <li>Dokončení do týdne</li>
+                    </ul>
+                    <div class="d-flex">
+                        <a href="#contact" class="btn btn-pricing">Poptat nyní</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <div id="footer-start" class="mt">
+        <section>
             <h2 class="h2-heading text-center">Kontakt</h2>
             <div id="map" class="container">
                 <h3>Mapa</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17530.482165165082!2d16.58821366013299!3d49.221010786911634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471294099dc06bbb%3A0xbfcf161b01a48b0d!2zRmFrdWx0YSBpbmZvcm1hxI1uw61jaCB0ZWNobm9sb2dpw60gVnlzb2vDqWhvIHXEjWVuw60gdGVjaG5pY2vDqWhvIHYgQnJuxJs!5e0!3m2!1scs!2scz!4v1682114907660!5m2!1scs!2scz"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17530.482165165082!2d16.58821366013299!3d49.221010786911634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471294099dc06bbb%3A0xbfcf161b01a48b0d!2zRmFrdWx0YSBpbmZvcm1hxI1uw61jaCB0ZWNobm9sb2dpw60gVnlzb2vDqWhvIHXEjWVuw60gdGVjaG5pY2vDqWhvIHYgQnJuxJs!5e0!3m2!1scs!2scz!4v1682114907660!5m2!1scs!2scz"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
-        <div id="contact" class="row mt mb">
-            <div class="col-2 text-center">
+        <div id="contact" class="row mt mb container">
+            <div class="col-1 text-center">
                 <p>
                     Fiktivní programátor<br>
                     IČO: 000000000<br>
@@ -156,11 +236,11 @@
                     Božetěchova 1/2, 612 00 Brno-Královo Pole
                 </p>
                 <p>
-                    <a href="mailto:email@programator.cz"> email@programator.cz</a><br>
+                    <a href="mailto:email@programatorxyz123.cz"> email@programatorxyz123.cz</a><br>
                     <a href="tel:+420000000000">+420 000 000 000</a>
                 </p>
             </div>
-            <div class="col-3 text-left">
+            <div class="col-2 text-left">
                 <form>
                     <div class="d-flex">
                         <div class="ml">
@@ -186,19 +266,22 @@
         <div class="container text-center">
             <ul>
                 <li><a href="#home">Domů</a></li>
-                <li><a href="#films">Projekty</a></li>
-                <li><a href="#biography">Technologie</a></li>
+                <li><a href="#skills">Co umím</a></li>
+                <li><a href="#about">O mně</a></li>
+                <li><a href="#technologies">Technologie</a></li>
+                <li><a href="#pricing">Ceník</a></li>
+                <li><a href="#contact">Kontakt</a></li>
             </ul>
             <div>Fiktivní programátor © <span id="year"></span> by Lukáš Ježek</div>
         </div>
     </footer>
+    <a href="#home" id="to-top">&#8593;</a>
 </main>
 
 <script>
     document.getElementById("year").innerHTML = new Date().getFullYear();
 
     let i = 0, j = 0, counter = 0;
-    /*array, storing the texts, you can add more texts into it*/
     const texts = new Array(
         "Nejlepší programátor na trhu",
         "100+ projektů dokončeno",
@@ -248,12 +331,22 @@
         }
     }
 
-    window.onscroll = function() {stickyHeader()};
+    window.onscroll = function () {
+        stickyHeader()
+    };
     let header = document.getElementById("header_nav");
     let sticky = header.offsetTop;
+    let arrow = document.getElementById("to-top")
+
     function stickyHeader() {
-        if (window.pageYOffset > sticky) header.classList.add("sticky");
-        else header.classList.remove("sticky");
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky")
+            arrow.classList.add("to-top-visible")
+        }
+        else {
+            header.classList.remove("sticky")
+            arrow.classList.remove("to-top-visible")
+        }
     }
 
 
